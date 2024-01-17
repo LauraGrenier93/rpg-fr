@@ -1,0 +1,91 @@
+body {
+
+    background: #fff;
+
+    margin: 20%;
+
+}
+
+.row {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.targetCell {
+
+    background: #05319f;
+
+}
+
+.cell {
+
+    width: 70px;
+
+    height: 70px;
+
+    border: solid 1px black;
+
+}
+
+.player {
+
+    background-image: url("../images/sprite.png");
+
+    background-repeat: no-repeat;
+
+    width: 6vw;
+
+    height: 4vh;
+
+}
+
+.direction-down {
+
+    transform: rotate(90deg);
+
+    background-position: 30px -64px;
+
+}
+
+.direction-left {
+
+    transform: rotate(180deg);
+
+    background-position: 10px -63px;
+
+}
+
+.direction-up {
+
+    transform: rotate(-90deg);
+
+    background-position: 0px -64px;
+
+}
+
+.direction-right {
+
+    transform: rotate(0deg);
+
+    background-position: 20px -64px;
+
+}
+
+.messageFlashEndGame {
+
+    background-color: #05319f;
+
+    font-size: 1.5rem;
+
+    color: white;
+
+    line-height: 40px;
+
+    text-align: center;
+
+}
