@@ -1,12 +1,11 @@
 ﻿# rpg-fr
 ## Info Générale
-Ce projet est une formation pour l'insertion d'un contenu dynamique de code HTML dans le DOM (Document Object Model) à l'aide de Javascript. À cela s’ajoute la gestion des interactions des utilisateurs. Ce défi est un programme qui crée automatiquement une grille sur laquelle un personnage se déplace vers la case d'arrivée en étant dirigé par les touches (flèche avant, flèche gauche, flèche droite). Un message s'affiche lorsqu'il se trouve sur la case d'arrivée indiquant le nombre de coups.
+Ce projet est un entrainement à l'insertion d'un contenu dynamique de code HTML dans le DOM (Document Object Model) à l'aide de Javascript. À cela s’ajoute la gestion des interactions des utilisateurs. Cette page contient une grille sur laquelle un personnage se déplace vers la case d'arrivée en étant dirigé par les touches (flèche avant, flèche gauche, flèche droite). Un message s'affiche lorsqu'il se trouve sur la case d'arrivée indiquant le nombre de coups.
 
 ## Auteur
 Laura Grenier
 
 ## Technologies
-CSS (la requête multimédia utilisée est une taille d'écran d'ordinateur de 781 px à 1 500 px)
 Javascript
 
 ## Installation
