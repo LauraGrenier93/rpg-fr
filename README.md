@@ -15,3 +15,6 @@ Deuxièmement, vous visualisez l'application :
 
 ouvrez votre navigateur et choisissez le fichier index.html
 ou vous installez l'extension liveServer de Visual Studio Code
+
+## Visualisation du projet
+Le projet a été publié sur github : https://lauragrenier93.github.io/rpg-fr/
