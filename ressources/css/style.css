@@ -31,12 +31,12 @@ body {
 
 .direction-down {
     transform: rotate(90deg);
-    background-position: 30px -64px;
+    background-position: 0 -64px;
 }
 
 .direction-left {
     transform: rotate(180deg);
-    background-position: 10px -63px;
+    background-position: 0 -63px;
 }
 
 .direction-up {
@@ -57,9 +57,34 @@ body {
     text-align: center;
 }
 
+#gameControllers {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#ArrowUp,
+#ArrowLeft,
+#ArrowRight {
+    grid-column: 1/3;
+    width: 70px;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+#ArrowLeft {
+    grid-column: 1;
+}
+
+#ArrowRight {
+    grid-column: 2;
+}
+
 @media screen and (min-width:315px) {
     .player {
-        width: 5vh;
+        width: 4vh;
     }
 
     .cell {
@@ -67,7 +92,7 @@ body {
     }
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:760px) {
     .cell {
         max-width: 70px;
     }
@@ -83,16 +108,36 @@ body {
 
     .direction-left {
         transform: rotate(180deg);
-        background-position: 10px -63px;
+        background-position: 25px -63px;
     }
 
     .direction-up {
         transform: rotate(-90deg);
-        background-position: 0px -64px;
+        background-position: 15px -64px;
     }
 
     .direction-right {
         transform: rotate(0deg);
         background-position: 20px -64px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .direction-down {
+        background-position: 29px -64px;
+    }
+
+    .direction-left {
+        background-position: 37px -63px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .direction-left {
+        background-position: 20px -63px;
+    }
+
+    .direction-down {
+        background-position: 18px -64px;
     }
 }

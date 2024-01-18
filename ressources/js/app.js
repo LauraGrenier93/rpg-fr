@@ -17,6 +17,7 @@ const app = {
     init: () => {
         app.redrawBoard();
         app.listenKeyboardEvents();
+        app.moveEvents();
     },
 
     /**
@@ -103,6 +104,21 @@ const app = {
             } else if (event.code === "ArrowRight") {
                 app.turnRight();
             }
+        })
+    },
+    /**
+ * method that allows you to move with the click on the gamepad
+ */
+    moveEvents: () => {
+        console.log('je suis dans moveEvents')
+        document.getElementById("ArrowUp").addEventListener("click", function (event) {
+            app.moveForward();
+        });
+        document.getElementById("ArrowLeft").addEventListener("click", function (event) {
+            app.turnLeft();
+        });
+        document.getElementById("ArrowRight").addEventListener("click", function (event) {
+            app.turnRight();
         })
     },
 
