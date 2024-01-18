@@ -15,16 +15,18 @@ body {
 }
 
 .cell {
-    width: 70px;
-    height: 70px;
+    width: 100%;
+    max-width: 40px;
+    height: 5vh;
     border: solid 1px black;
 }
 
 .player {
     background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
-    width: 6vw;
-    height: 4vh;
+    width: 100%;
+    max-width: 8vh;
+    height: 2.1rem;
 }
 
 .direction-down {
@@ -44,7 +46,7 @@ body {
 
 .direction-right {
     transform: rotate(0deg);
-    background-position: 20px -64px;
+    background-position: 0 -64px;
 }
 
 .messageFlashEndGame {
@@ -53,4 +55,44 @@ body {
     color: white;
     line-height: 40px;
     text-align: center;
+}
+
+@media screen and (min-width:315px) {
+    .player {
+        width: 5vh;
+    }
+
+    .cell {
+        max-width: 30px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .cell {
+        max-width: 70px;
+    }
+
+    .player {
+        width: 8vh;
+    }
+
+    .direction-down {
+        transform: rotate(90deg);
+        background-position: 30px -64px;
+    }
+
+    .direction-left {
+        transform: rotate(180deg);
+        background-position: 10px -63px;
+    }
+
+    .direction-up {
+        transform: rotate(-90deg);
+        background-position: 0px -64px;
+    }
+
+    .direction-right {
+        transform: rotate(0deg);
+        background-position: 20px -64px;
+    }
 }
